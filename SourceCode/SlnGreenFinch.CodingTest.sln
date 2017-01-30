@@ -1,0 +1,232 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.UI", "1.UI", "{5931BE91-6A7E-4485-934D-DD9026F127E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.DomainServices", "3.DomainServices", "{0F7C735D-9234-4C24-9EA7-F4CC5F3D0968}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Common", "0.Common", "{104EF140-3BC7-403B-9D08-93CCCB4ABA3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.ApplicationServices", "2.ApplicationServices", "{F0216DBD-3A09-485C-9E4E-FE3D392BFA1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.InfraStructure", "5.InfraStructure", "{34855FC8-8EC9-4173-ADB6-4203092FF793}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Tests", "6.Tests", "{F2703CB8-68CD-4B46-A3F6-D541645F89D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.EFDbAccess", "4.EFDbAccess", "{BDC230AE-CA5A-484E-AE33-860FC93D6A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.Common.MEF", "0.Common\CodingTest.Common.MEF\CodingTest.Common.MEF.csproj", "{9BCC6FEC-6A6A-460B-9FA7-F398A4B43E39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.Utility", "0.Common\CodingTest.Utility\CodingTest.Utility.csproj", "{637A5808-40C1-4890-8890-300C6FD24776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.MVC.Angular.UI", "1.UI\CodingTest.MVC.Angular.UI\CodingTest.MVC.Angular.UI.csproj", "{CF76279D-490A-46E4-9485-DEBE32961F6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.WebApi2", "2.ApplicationServices\CodingTest.WebApi2\CodingTest.WebApi2.csproj", "{CFC618FB-C856-4CD6-B4A3-7D2D1A218A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.DomainServices", "3.DomainServices\CodingTest.DomainServices\CodingTest.DomainServices.csproj", "{E11B27BC-A5F3-4B31-AC59-99F06085D22F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.IDomainServices", "3.DomainServices\CodingTest.IDomainServices\CodingTest.IDomainServices.csproj", "{1F73F87C-6D41-4C56-86BF-B108D0B4F26D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.RequestResponseModels", "3.DomainServices\CodingTest.RequestResponseModels\CodingTest.RequestResponseModels.csproj", "{76C30866-99B1-4840-BDE3-15FC52B500CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.ViewModels", "3.DomainServices\CodingTest.ViewModels\CodingTest.ViewModels.csproj", "{46CC89F4-8842-48DF-9991-FC5536890992}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.EntityModels", "4.EFDbAccess\CodingTest.EntityModels\CodingTest.EntityModels.csproj", "{79034B9A-1C93-4F0C-A167-9DF5EDABE35D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.IRepositories", "4.EFDbAccess\CodingTest.IRepositories\CodingTest.IRepositories.csproj", "{F8D2C5E6-250F-475D-A3DF-EAB74434452A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.Repositories", "4.EFDbAccess\CodingTest.Repositories\CodingTest.Repositories.csproj", "{495D3B28-8BB3-49E0-808B-CA7227CBE16C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.InfraStructure", "5.InfraStructure\CodingTest.Infrastructure\CodingTest.InfraStructure.csproj", "{80756397-E0DB-4A07-802A-AA3CCCB948B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.Tests.Common", "6.Tests\CodingTest.Tests.Common\CodingTest.Tests.Common.csproj", "{61142745-6C23-4447-8FA4-6A0EF9BFED91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.Tests.DomainServices", "6.Tests\CodingTest.Tests.DomainServicesTests\CodingTest.Tests.DomainServices.csproj", "{AE301A98-7B53-4DA3-93ED-85BC3F76F086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingTest.Tests.WebApi", "6.Tests\CodingTest.Tests.WebApi\CodingTest.Tests.WebApi.csproj", "{2D3D209E-4B2C-4B1B-A07F-869D0F4BE868}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BCC6FEC-6A6A-460B-9FA7-F398A4B43E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCC6FEC-6A6A-460B-9FA7-F398A4B43E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCC6FEC-6A6A-460B-9FA7-F398A4B43E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCC6FEC-6A6A-460B-9FA7-F398A4B43E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{637A5808-40C1-4890-8890-300C6FD24776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{637A5808-40C1-4890-8890-300C6FD24776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{637A5808-40C1-4890-8890-300C6FD24776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{637A5808-40C1-4890-8890-300C6FD24776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF76279D-490A-46E4-9485-DEBE32961F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF76279D-490A-46E4-9485-DEBE32961F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF76279D-490A-46E4-9485-DEBE32961F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF76279D-490A-46E4-9485-DEBE32961F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC618FB-C856-4CD6-B4A3-7D2D1A218A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC618FB-C856-4CD6-B4A3-7D2D1A218A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC618FB-C856-4CD6-B4A3-7D2D1A218A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC618FB-C856-4CD6-B4A3-7D2D1A218A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E11B27BC-A5F3-4B31-AC59-99F06085D22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E11B27BC-A5F3-4B31-AC59-99F06085D22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E11B27BC-A5F3-4B31-AC59-99F06085D22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E11B27BC-A5F3-4B31-AC59-99F06085D22F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F73F87C-6D41-4C56-86BF-B108D0B4F26D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F73F87C-6D41-4C56-86BF-B108D0B4F26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F73F87C-6D41-4C56-86BF-B108D0B4F26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F73F87C-6D41-4C56-86BF-B108D0B4F26D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C30866-99B1-4840-BDE3-15FC52B500CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C30866-99B1-4840-BDE3-15FC52B500CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C30866-99B1-4840-BDE3-15FC52B500CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C30866-99B1-4840-BDE3-15FC52B500CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46CC89F4-8842-48DF-9991-FC5536890992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CC89F4-8842-48DF-9991-FC5536890992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CC89F4-8842-48DF-9991-FC5536890992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CC89F4-8842-48DF-9991-FC5536890992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79034B9A-1C93-4F0C-A167-9DF5EDABE35D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79034B9A-1C93-4F0C-A167-9DF5EDABE35D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79034B9A-1C93-4F0C-A167-9DF5EDABE35D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79034B9A-1C93-4F0C-A167-9DF5EDABE35D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D2C5E6-250F-475D-A3DF-EAB74434452A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D2C5E6-250F-475D-A3DF-EAB74434452A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D2C5E6-250F-475D-A3DF-EAB74434452A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D2C5E6-250F-475D-A3DF-EAB74434452A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495D3B28-8BB3-49E0-808B-CA7227CBE16C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495D3B28-8BB3-49E0-808B-CA7227CBE16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495D3B28-8BB3-49E0-808B-CA7227CBE16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495D3B28-8BB3-49E0-808B-CA7227CBE16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80756397-E0DB-4A07-802A-AA3CCCB948B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80756397-E0DB-4A07-802A-AA3CCCB948B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80756397-E0DB-4A07-802A-AA3CCCB948B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80756397-E0DB-4A07-802A-AA3CCCB948B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61142745-6C23-4447-8FA4-6A0EF9BFED91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61142745-6C23-4447-8FA4-6A0EF9BFED91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61142745-6C23-4447-8FA4-6A0EF9BFED91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61142745-6C23-4447-8FA4-6A0EF9BFED91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE301A98-7B53-4DA3-93ED-85BC3F76F086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE301A98-7B53-4DA3-93ED-85BC3F76F086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE301A98-7B53-4DA3-93ED-85BC3F76F086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE301A98-7B53-4DA3-93ED-85BC3F76F086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D3D209E-4B2C-4B1B-A07F-869D0F4BE868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3D209E-4B2C-4B1B-A07F-869D0F4BE868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3D209E-4B2C-4B1B-A07F-869D0F4BE868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3D209E-4B2C-4B1B-A07F-869D0F4BE868}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BCC6FEC-6A6A-460B-9FA7-F398A4B43E39} = {104EF140-3BC7-403B-9D08-93CCCB4ABA3E}
+		{637A5808-40C1-4890-8890-300C6FD24776} = {104EF140-3BC7-403B-9D08-93CCCB4ABA3E}
+		{CF76279D-490A-46E4-9485-DEBE32961F6A} = {5931BE91-6A7E-4485-934D-DD9026F127E4}
+		{CFC618FB-C856-4CD6-B4A3-7D2D1A218A28} = {F0216DBD-3A09-485C-9E4E-FE3D392BFA1E}
+		{E11B27BC-A5F3-4B31-AC59-99F06085D22F} = {0F7C735D-9234-4C24-9EA7-F4CC5F3D0968}
+		{1F73F87C-6D41-4C56-86BF-B108D0B4F26D} = {0F7C735D-9234-4C24-9EA7-F4CC5F3D0968}
+		{76C30866-99B1-4840-BDE3-15FC52B500CB} = {0F7C735D-9234-4C24-9EA7-F4CC5F3D0968}
+		{46CC89F4-8842-48DF-9991-FC5536890992} = {0F7C735D-9234-4C24-9EA7-F4CC5F3D0968}
+		{79034B9A-1C93-4F0C-A167-9DF5EDABE35D} = {BDC230AE-CA5A-484E-AE33-860FC93D6A4E}
+		{F8D2C5E6-250F-475D-A3DF-EAB74434452A} = {BDC230AE-CA5A-484E-AE33-860FC93D6A4E}
+		{495D3B28-8BB3-49E0-808B-CA7227CBE16C} = {BDC230AE-CA5A-484E-AE33-860FC93D6A4E}
+		{80756397-E0DB-4A07-802A-AA3CCCB948B4} = {34855FC8-8EC9-4173-ADB6-4203092FF793}
+		{61142745-6C23-4447-8FA4-6A0EF9BFED91} = {F2703CB8-68CD-4B46-A3F6-D541645F89D8}
+		{AE301A98-7B53-4DA3-93ED-85BC3F76F086} = {F2703CB8-68CD-4B46-A3F6-D541645F89D8}
+		{2D3D209E-4B2C-4B1B-A07F-869D0F4BE868} = {F2703CB8-68CD-4B46-A3F6-D541645F89D8}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://makvcopenhagen.visualstudio.com/
+		SccProjectUniqueName0 = 0.Common\\CodingTest.Common.MEF\\CodingTest.Common.MEF.csproj
+		SccProjectTopLevelParentUniqueName0 = SlnGreenFinch.CodingTest.sln
+		SccProjectName0 = 0.Common/CodingTest.Common.MEF
+		SccAuxPath0 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath0 = 0.Common\\CodingTest.Common.MEF
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = 0.Common\\CodingTest.Utility\\CodingTest.Utility.csproj
+		SccProjectTopLevelParentUniqueName1 = SlnGreenFinch.CodingTest.sln
+		SccProjectName1 = 0.Common/CodingTest.Utility
+		SccAuxPath1 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath1 = 0.Common\\CodingTest.Utility
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = 1.UI\\CodingTest.MVC.Angular.UI\\CodingTest.MVC.Angular.UI.csproj
+		SccProjectTopLevelParentUniqueName2 = SlnGreenFinch.CodingTest.sln
+		SccProjectName2 = 1.UI/CodingTest.MVC.Angular.UI
+		SccAuxPath2 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath2 = 1.UI\\CodingTest.MVC.Angular.UI
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = 2.ApplicationServices\\CodingTest.WebApi2\\CodingTest.WebApi2.csproj
+		SccProjectTopLevelParentUniqueName3 = SlnGreenFinch.CodingTest.sln
+		SccProjectName3 = 2.ApplicationServices/CodingTest.WebApi2
+		SccAuxPath3 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath3 = 2.ApplicationServices\\CodingTest.WebApi2
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = 3.DomainServices\\CodingTest.DomainServices\\CodingTest.DomainServices.csproj
+		SccProjectTopLevelParentUniqueName4 = SlnGreenFinch.CodingTest.sln
+		SccProjectName4 = 3.DomainServices/CodingTest.DomainServices
+		SccAuxPath4 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath4 = 3.DomainServices\\CodingTest.DomainServices
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = 3.DomainServices\\CodingTest.IDomainServices\\CodingTest.IDomainServices.csproj
+		SccProjectTopLevelParentUniqueName5 = SlnGreenFinch.CodingTest.sln
+		SccProjectName5 = 3.DomainServices/CodingTest.IDomainServices
+		SccAuxPath5 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath5 = 3.DomainServices\\CodingTest.IDomainServices
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName6 = 3.DomainServices\\CodingTest.RequestResponseModels\\CodingTest.RequestResponseModels.csproj
+		SccProjectTopLevelParentUniqueName6 = SlnGreenFinch.CodingTest.sln
+		SccProjectName6 = 3.DomainServices/CodingTest.RequestResponseModels
+		SccAuxPath6 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath6 = 3.DomainServices\\CodingTest.RequestResponseModels
+		SccProvider6 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName7 = 3.DomainServices\\CodingTest.ViewModels\\CodingTest.ViewModels.csproj
+		SccProjectTopLevelParentUniqueName7 = SlnGreenFinch.CodingTest.sln
+		SccProjectName7 = 3.DomainServices/CodingTest.ViewModels
+		SccAuxPath7 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath7 = 3.DomainServices\\CodingTest.ViewModels
+		SccProvider7 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName8 = 4.EFDbAccess\\CodingTest.EntityModels\\CodingTest.EntityModels.csproj
+		SccProjectTopLevelParentUniqueName8 = SlnGreenFinch.CodingTest.sln
+		SccProjectName8 = 4.EFDbAccess/CodingTest.EntityModels
+		SccAuxPath8 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath8 = 4.EFDbAccess\\CodingTest.EntityModels
+		SccProvider8 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName9 = 4.EFDbAccess\\CodingTest.IRepositories\\CodingTest.IRepositories.csproj
+		SccProjectTopLevelParentUniqueName9 = SlnGreenFinch.CodingTest.sln
+		SccProjectName9 = 4.EFDbAccess/CodingTest.IRepositories
+		SccAuxPath9 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath9 = 4.EFDbAccess\\CodingTest.IRepositories
+		SccProvider9 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName10 = 4.EFDbAccess\\CodingTest.Repositories\\CodingTest.Repositories.csproj
+		SccProjectTopLevelParentUniqueName10 = SlnGreenFinch.CodingTest.sln
+		SccProjectName10 = 4.EFDbAccess/CodingTest.Repositories
+		SccAuxPath10 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath10 = 4.EFDbAccess\\CodingTest.Repositories
+		SccProvider10 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName11 = 5.InfraStructure\\CodingTest.Infrastructure\\CodingTest.InfraStructure.csproj
+		SccProjectTopLevelParentUniqueName11 = SlnGreenFinch.CodingTest.sln
+		SccProjectName11 = 5.InfraStructure/CodingTest.Infrastructure
+		SccAuxPath11 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath11 = 5.InfraStructure\\CodingTest.Infrastructure
+		SccProvider11 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName12 = 6.Tests\\CodingTest.Tests.Common\\CodingTest.Tests.Common.csproj
+		SccProjectTopLevelParentUniqueName12 = SlnGreenFinch.CodingTest.sln
+		SccProjectName12 = 6.Tests/CodingTest.Tests.Common
+		SccAuxPath12 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath12 = 6.Tests\\CodingTest.Tests.Common
+		SccProvider12 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName13 = 6.Tests\\CodingTest.Tests.DomainServicesTests\\CodingTest.Tests.DomainServices.csproj
+		SccProjectTopLevelParentUniqueName13 = SlnGreenFinch.CodingTest.sln
+		SccProjectName13 = 6.Tests/CodingTest.Tests.DomainServicesTests
+		SccAuxPath13 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath13 = 6.Tests\\CodingTest.Tests.DomainServicesTests
+		SccProvider13 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName14 = 6.Tests\\CodingTest.Tests.WebApi\\CodingTest.Tests.WebApi.csproj
+		SccProjectTopLevelParentUniqueName14 = SlnGreenFinch.CodingTest.sln
+		SccProjectName14 = 6.Tests/CodingTest.Tests.WebApi
+		SccAuxPath14 = https://makvcopenhagen.visualstudio.com
+		SccLocalPath14 = 6.Tests\\CodingTest.Tests.WebApi
+		SccProvider14 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

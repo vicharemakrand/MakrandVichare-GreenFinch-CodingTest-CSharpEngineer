@@ -1,0 +1,14 @@
+﻿<form role="form">
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="form-login-heading">Login Page</h2>
+            <input type="text" class="form-control" placeholder="Email" data-ng-model="loginCtrl.loginVM.Email" required autofocus>
+            <input type="password" class="form-control" placeholder="Password" data-ng-model="loginCtrl.loginVM.Password" required>
+
+            <button class="btn btn-md btn-info btn-block" style="width:200px" type="submit" data-ng-click="loginCtrl.Login(loginCtrl.loginVM)">Login</button>
+              <div data-ng-hide="loginCtrl.ProcessInfo.Message == ''" class="alert alert-danger">
+                {{loginCtrl.ProcessInfo.Message}}
+            </div>
+        </div>
+    </div>
+</form>

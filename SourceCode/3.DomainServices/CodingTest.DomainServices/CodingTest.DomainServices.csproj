@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E11B27BC-A5F3-4B31-AC59-99F06085D22F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodingTest.DomainServices</RootNamespace>
+    <AssemblyName>CodingTest.DomainServices</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.3.0.449, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\StructureMap.4.4.0\lib\net45\StructureMap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\BaseService.cs" />
+    <Compile Include="ModuleInit.cs" />
+    <Compile Include="IdentityStores\CustomUserStore.cs" />
+    <Compile Include="Services\LocalizationService.cs" />
+    <Compile Include="Services\NewsLetterService.cs" />
+    <Compile Include="Services\UserNewsLetterService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\0.Common\CodingTest.Common.MEF\CodingTest.Common.MEF.csproj">
+      <Project>{9bcc6fec-6a6a-460b-9fa7-f398a4b43e39}</Project>
+      <Name>CodingTest.Common.MEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\0.Common\CodingTest.Utility\CodingTest.Utility.csproj">
+      <Project>{637a5808-40c1-4890-8890-300c6fd24776}</Project>
+      <Name>CodingTest.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\4.EFDbAccess\CodingTest.EntityModels\CodingTest.EntityModels.csproj">
+      <Project>{79034b9a-1c93-4f0c-a167-9df5edabe35d}</Project>
+      <Name>CodingTest.EntityModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\4.EFDbAccess\CodingTest.IRepositories\CodingTest.IRepositories.csproj">
+      <Project>{f8d2c5e6-250f-475d-a3df-eab74434452a}</Project>
+      <Name>CodingTest.IRepositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\5.InfraStructure\CodingTest.Infrastructure\CodingTest.InfraStructure.csproj">
+      <Project>{80756397-E0DB-4A07-802A-AA3CCCB948B4}</Project>
+      <Name>CodingTest.InfraStructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodingTest.IDomainServices\CodingTest.IDomainServices.csproj">
+      <Project>{1f73f87c-6d41-4c56-86bf-b108d0b4f26d}</Project>
+      <Name>CodingTest.IDomainServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodingTest.RequestResponseModels\CodingTest.RequestResponseModels.csproj">
+      <Project>{76c30866-99b1-4840-bde3-15fc52b500cb}</Project>
+      <Name>CodingTest.RequestResponseModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodingTest.ViewModels\CodingTest.ViewModels.csproj">
+      <Project>{46cc89f4-8842-48df-9991-fc5536890992}</Project>
+      <Name>CodingTest.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

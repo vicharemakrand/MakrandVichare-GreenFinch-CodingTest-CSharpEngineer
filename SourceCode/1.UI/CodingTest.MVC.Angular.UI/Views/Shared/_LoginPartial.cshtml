@@ -1,0 +1,15 @@
+﻿    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/Home/#/home">Test Api connection</a></li>
+        <li ng-hide="!login.authenticationVM.IsAuth"><a href="#">Welcome {{login.authenticationVM.UserName}}</a></li>
+        <li><a href="/NewsLetter">More NewsLetters</a></li>
+        <li ng-hide="!login.authenticationVM.IsAuth"><a href="/UserNewsLetter">My NewsLetters</a></li>
+        <li ng-hide="!login.authenticationVM.IsAuth"><a href="" ng-click="login.LogOut()">Logout</a></li>
+        <li ng-hide="login.authenticationVM.IsAuth"> <a href="/Home/#/login">Login</a></li>
+        <li ng-hide="login.authenticationVM.IsAuth"> <a href="/Home/#/signup">Sign Up</a></li>
+        <li ng-hide="login.authenticationVM.IsAuth"> 
+            <select  name="languageCode" ng-change="login.OnLanguageChange()" ng-model="login.selectedLanguage">
+                <option value='en-us'>English</option>
+                <option value='ga'>Irish</option>
+            </select>
+       </li>
+    </ul>

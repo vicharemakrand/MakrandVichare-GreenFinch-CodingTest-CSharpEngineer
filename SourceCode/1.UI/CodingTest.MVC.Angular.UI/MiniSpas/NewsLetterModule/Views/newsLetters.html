@@ -1,0 +1,38 @@
+﻿<h2>Available NewsLetters</h2>
+<div ng-init="newsLetterCtrl.Initialize()">
+    <div style="overflow:auto">
+        <input type="text" name="publisher" style="float:left;width:250px" placeholder="NewsLetter Publisher" ng-model="newsLetterCtrl.searchNewsLetterParamVM.Publisher" ng-maxlength="20">
+        <input type="text" name="author" style="float:left;;width:250px" placeholder="NewsLetter Author" ng-model="newsLetterCtrl.searchNewsLetterParamVM.Author" ng-maxlength="20">
+        <input type="button" name="btnSearch" style="float:left;width:120px"  value="Search NewsLetter" ng-click="newsLetterCtrl.GetNewsLetters()">
+        <br/>
+        <div ng-hide="newsLetterCtrl.ProcessInfo.Message == '' || newsLetterCtrl.ProcessInfo.IsSucceed" ng-class="(newsLetterCtrl.ProcessInfo.IsSucceed) ? 'alert alert-success' : 'alert alert-danger'">
+            {{newsLetterCtrl.ProcessInfo.Message}}
+        </div>
+    </div>
+</div>
+<br />
+
+<hr />
+<div>
+    <div style="overflow:auto" ng-if="newsLetterCtrl.newsLetterList.length >0">
+        <div style="float:left;overflow:auto;border:solid;border-width:thin;margin:2px;width:98%" ng-repeat="newsLetter in newsLetterCtrl.newsLetterList">
+            <div ng-hide="(!newsLetterCtrl.authenticationVM.IsAuth) || newsLetter.isRequested" style="float:left;text-align:right;width:100%">
+                <div ng-controller="UserNewsLetterModule.Controllers.UserNewsLetterController as userNewsLetterCtrl">
+                    <input type="button" name="btnFindNewsLetter" style="width:150px" value="Subscribe (not tested)" ng-click="userNewsLetterCtrl.UpdateMyNewsLetters(newsLetter.id)"/>
+                </div>
+            </div>
+
+            <div style="text-align:center;padding-left:2px;padding-bottom:3px"><b>{{newsLetter.title}}</b></div>
+                <div style="overflow:auto">
+                    <div style="float:left;text-align:left;">
+                        <div style="text-align:left;padding-right:2px;padding-top:3px"><b>Publisher : {{newsLetter.publisher}}</b></div>
+                        <div style="text-align:left;padding-right:2px;padding-top:3px"><b>Author : {{newsLetter.author}}</b></div>
+                    </div>
+                 </div>
+            <div style="text-align:left;padding-right:2px;padding-top:3px"><b>{{newsLetter.description}}</b></div>
+         </div>
+    </div>
+    <div style="overflow:auto;text-align:center" ng-if="newsLetterCtrl.newsLetterList.length  == 0">
+        {{newsLetterCtrl.ProcessInfo.Message}}
+    </div>
+</div>

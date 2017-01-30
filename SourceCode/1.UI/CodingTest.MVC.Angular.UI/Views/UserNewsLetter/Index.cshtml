@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "My Subscribed NewsLetters";
+}
+
+@section scripts {
+
+}
+<div class="container" ng-app="UserNewsLetterModule">
+ 
+    @Html.Partial("_TopMenu")
+
+    <div class="row">
+        <div>
+            <div anti-Forgery-Token ng-view>  </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/userNewsLetter-modules")
+@Scripts.Render("~/bundles/userNewsLetter-services")
+@Scripts.Render("~/bundles/userNewsLetter-controllers")
+
+@Scripts.Render("~/bundles/newsLetter-modules")
+@Scripts.Render("~/bundles/newsLetter-services")
+@Scripts.Render("~/bundles/newsLetter-controllers")

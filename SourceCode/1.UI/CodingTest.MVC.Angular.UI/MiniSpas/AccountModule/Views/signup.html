@@ -1,0 +1,96 @@
+﻿<form class="form-login" name="formSignUp" novalidate>
+    <h2 class="form-login-heading">Subscribe for newsletters</h2>
+    <!--<div class="alert alert-danger" ng-if="formSignUp.$submitted && formSignUp.$invalid">Form Error!!</div>
+    <div class="alert alert-success" ng-if="!formSignUp.$invalid">Form Success!!</div>-->
+    <div class="form-group row">
+        <div class="col-md-6">
+            <label class="col-md-4 control-label" >{{signupCtrl.GetLocalizedValue('emailKey')}} *</label>
+            <div class="col-md-8">
+                <input type="email" name="email" class="form-control" placeholder="{{signupCtrl.GetLocalizedValue('emailKey')}}" ng-model="signupCtrl.signUpVM.Email"
+                       ng-maxlength="100" ng-model-options="{ updateOn: blur }"
+                       ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/" ng-required="true" autofocus />
+                <div class="help-block" ng-messages="formSignUp.email.$error" ng-if="formSignUp.email.$touched">
+                    <p ng-message="required">Your email is required.</p>
+                    <p ng-message="pattern">Your email is not valid.</p>
+                    <p ng-message="maxlength">Your email is too long.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label class="col-md-4 control-label">{{signupCtrl.GetLocalizedValue('passwordKey')}} *</label>
+            <div class="col-md-8">
+                <input type="password" name="password" class="form-control" placeholder="{{signupCtrl.GetLocalizedValue('passwordKey')}}" ng-model="signupCtrl.signUpVM.Password" ng-minlength="6"
+                       ng-maxlength="20" ng-required="true">
+                <div class="help-block" ng-messages="formSignUp.password.$error" ng-if="formSignUp.password.$touched">
+                    <p ng-message="required">Your name is required.</p>
+                    <p ng-message="minlength">Your name is too short.</p>
+                    <p ng-message="maxlength">Your name is too long.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-6">
+            <label class="col-md-4 control-label">{{signupCtrl.GetLocalizedValue('heardAboutUsKey')}} *</label>
+            <div class="col-md-8">
+                <select class="form-control" name="heardAboutUs" ng-required="true" ng-model="signupCtrl.signUpVM.HeardAboutUs"
+                        ng-options="operator.id as operator.name for operator in signupCtrl.signUpVM.HeardAboutUsList"></select>
+                <div class="help-block" ng-messages="formSignUp.heardAboutUs.$error" ng-if="formSignUp.heardAboutUs.$touched">
+                    <p ng-message="required">Heard about us is required.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label class="col-md-4 control-label">{{signupCtrl.GetLocalizedValue('reasonforSignupKey')}} </label>
+            <div class="col-md-8">
+                <textarea rows="4" cols="50" name="signUpReason" class="form-control" ng-model="signupCtrl.signUpVM.SignUpReason" ng-minlength="6"
+                          ng-maxlength="500">
+                    {{signupCtrl.GetLocalizedValue('reasonforSignupKey')}}
+                </textarea>
+
+            </div>
+            <div class="help-block" ng-messages="formSignUp.signUpReason.$error" ng-if="formSignUp.signUpReason.$touched">
+                <p ng-message="minlength">Your name is too short.</p>
+                <p ng-message="maxlength">Your name is too long.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-md-2">
+            <button class="btn btn-lg btn-info btn-block" style="width:200px" type="submit"
+                    ng-disabled="formSignUp.$invalid || (signupCtrl.signUpVM.NewsLetterList | filter: item.isSubscribed != true).length <=0" ng-click="signupCtrl.SignUp()">
+                {{signupCtrl.GetLocalizedValue('submitKey')}}
+            </button>
+        </div>
+        <div class="col-md-10">
+            <div ng-hide="signupCtrl.ProcessInfo.Message == ''" ng-class="(signupCtrl.ProcessInfo.IsSucceed) ? 'alert alert-success' : 'alert alert-danger'">
+                {{signupCtrl.ProcessInfo.Message}}
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="form-group row">
+        <label class="col-md-4 control-label">{{signupCtrl.GetLocalizedValue('iamInterestedInKey')}} *</label>
+    </div>
+    <div class="form-group row">
+            <div class="col-md-12">
+                <div style="overflow:auto;max-height:200px" ng-if="signupCtrl.signUpVM.NewsLetterList.length >0">
+                    <div style="float:left;overflow:auto;border:solid;border-width:thin;margin:2px;width:98%" ng-repeat="newsLetter in signupCtrl.signUpVM.NewsLetterList">
+                        <div><input type="checkbox" name="chkselect" ng-model="newsLetter.isSubscribed" /> </div>
+                        <div style="text-align:center;padding-left:2px;padding-bottom:3px"><b>{{newsLetter.title}}</b></div>
+                        <div style="overflow:auto">
+                            <div style="float:left;text-align:left;">
+                                <div style="text-align:left;padding-right:2px;padding-top:3px"><b>Publisher : {{newsLetter.publisher}}</b></div>
+                                <div style="text-align:left;padding-right:2px;padding-top:3px"><b>Author : {{newsLetter.author}}</b></div>
+                            </div>
+                        </div>
+                        <div style="text-align:left;padding-right:2px;padding-top:3px"><b>{{newsLetter.description}}</b></div>
+                    </div>
+                </div>
+                <div style="overflow:auto" ng-if="signupCtrl.signUpVM.NewsLetterList == null || signupCtrl.signUpVM.NewsLetterList.length <=0">
+                    <h4>{{signupCtrl.ProcessInfo.Message}}</h4>
+                </div>
+            </div>
+        </div>
+</form>
